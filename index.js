@@ -7,7 +7,7 @@ const actionsRouter = require('./actions/actionsRouter')
 server.use(express.json())
 
 server.get('/', (req, res) => {
-    res.json({message: Successfully compiled!})
+    res.json({message: "Successfully compiled!"})
 })
 
 server.use('api/projects', projectsRouter)
