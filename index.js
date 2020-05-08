@@ -10,7 +10,7 @@ server.get('/', (req, res) => {
     res.json({message: "Successfully compiled!"})
 })
 
-server.use('api/projects', projectsRouter)
+server.use('/api/projects', projectsRouter)
 server.use('/api/actions', actionsRouter)
 
 //error middleware
