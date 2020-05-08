@@ -57,16 +57,14 @@ router.delete('/:id', (req, res, next) => {
     .catch(next)
 })
 
-router.put('/:id', (req, res, next) => {
-    
+router.put('/:id', validateProj(), (req, res, next) => {
+    const id = req.params.id
+    const editProj = req.body
+    Projs.update(id, editProj)
+    .then(proj => {
+        res.status(200).json(proj)
+    })
+    .catch(next)
 })
 
 module.exports = router;
-
-/*
-    get,
-    insert,
-    update,
-    remove,
-    getProjectActions
-*/
