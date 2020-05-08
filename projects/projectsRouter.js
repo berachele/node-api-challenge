@@ -51,7 +51,7 @@ router.delete('/:id', (req, res, next) => {
     Projs.remove(id)
     .then(proj => {
         res.status(200).json({
-            success: `Project was deleted`
+            success: "Project was deleted"
         })
     })
     .catch(next)

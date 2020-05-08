@@ -6,7 +6,7 @@ module.exports = () => {
         const post = req.body
         if(!post.name || !post.description){
             res.status(400).json({
-                message: "Missing required name or description field."
+                message: "Missing required name and/or description field."
             })
         } else {
             next()
