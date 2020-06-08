@@ -39,14 +39,16 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
-
+    * Req and res are the homies, they always go together
+    * You can custom make your own middleware if built in or third party ones don’t have the functionality that you need
 - [ ] Describe Middleware?
-
+    * middleware are the function or steps that happen before sending it to the user in the request-response cycle.
 - [ ] Describe a Resource?
-
+    * Resource is part of the website when you go to a specific endpoint. However, when it isn’t found, it throws a Cannot GET error that   dev’s know what it means, but users would think the site is broken
 - [ ] What can the API return to help clients know if a request was successful?
-
+    * a success or error message
 - [ ] How can we partition our application into sub-applications?
+    * with Express Routers
 
 ## Minimum Viable Product
 
